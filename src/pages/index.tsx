@@ -19,10 +19,12 @@ export default function Home() {
           <form>
             <Input placeholder="seu email" type="text" />
             <Input placeholder="sua senha" type="password" />
-            <Button type="submit" Loading={true}>
+            <Button type="submit" Loading={false}>
               Acessar
             </Button>
           </form>
+
+          <a className={styles.text}>Não possui uma conta ? Cadastre-se</a>
         </div>
       </div>
     </>
