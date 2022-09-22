@@ -16,12 +16,13 @@ export default function SignUp() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
+  import { toast } from 'react-toastify'
 
   async function handleSignUp(event: FormEvent) {
     event.preventDefault()
 
     if (name === '' || password === '' || email === '') {
-      alert('preencha todos os campos')
+      toast.error('preencha todos os campos')
       return
     }
 

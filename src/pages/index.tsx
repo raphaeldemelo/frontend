@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logoImg from '../../public/logo.svg'
 import { Input } from '../components/ui/Input'
 import { Button } from '../components/ui/Button'
+import { toast } from 'react-toastify'
 
 import Link from 'next/link'
 
@@ -21,7 +22,7 @@ export default function Home() {
     event.preventDefault()
 
     if (email === '' || password === '') {
-      alert('preencha os dados')
+      toast.warning('preencha os dados')
     }
 
     setLoading(true)
