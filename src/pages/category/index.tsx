@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 export default function Category() {
   const [name, setName] = useState('')
 
-  async function handleRegister(event: Event) {
+  async function handleRegister(event: FormEvent) {
     event.preventDefault()
 
     if (name === '') {
