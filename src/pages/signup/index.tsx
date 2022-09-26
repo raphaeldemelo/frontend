@@ -7,6 +7,7 @@ import { Input } from '../../components/ui/Input'
 import { Button } from '../../components/ui/Button'
 
 import Link from 'next/link'
+import { toast } from 'react-toastify'
 
 import { AuthContext } from '../../contexts/AuthContext'
 
@@ -16,7 +17,6 @@ export default function SignUp() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
-  import { toast } from 'react-toastify'
 
   async function handleSignUp(event: FormEvent) {
     event.preventDefault()
